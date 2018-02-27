@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <h1>Angular Router</h1>
+    <h1>Learn Angular Routing</h1>
     <nav>
       <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
       <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+      <a routerLink="/dynamic" routerLinkActive="active">Dynamic Stuff</a>
     </nav>
     <router-outlet></router-outlet>
   `
