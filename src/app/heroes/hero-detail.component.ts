@@ -3,11 +3,12 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
+import { slideInDownAnimation } from '../animations'
 import { Hero, HeroService }  from './hero.service';
 
 @Component({
   template: `
-  <h2>HEROES</h2>
+  <h2>HERO</h2>
   <div *ngIf="hero$ | async as hero">
     <h3>"{{ hero.name }}"</h3>
     <div>
@@ -20,11 +21,16 @@ import { Hero, HeroService }  from './hero.service';
       <button (click)="gotoHeroes(hero)">Back</button>
     </p>
   </div>
-  `
+  `,
+  animations: [ slideInDownAnimation ]
 })
 export class HeroDetailComponent implements OnInit {
 
   hero$: Observable<Hero>;
+
+  @HostBinding('@routeAnimation') routeAnimation = true;
+  @HostBinding('style.display')   display = 'block';
+  @HostBinding('style.position')  position = 'absolute';
 
   constructor(
     private route: ActivatedRoute,
