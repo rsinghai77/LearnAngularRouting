@@ -6,8 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeroesModule }     from './heroes/heroes.module';
+import { CrisesModule }     from './crisis-center/crises.module';
 
-import { CrisisListComponent }   from './crisis-list.component';
 import { PageNotFoundComponent } from './not-found.component';
 
 @NgModule({
@@ -20,7 +20,6 @@ import { PageNotFoundComponent } from './not-found.component';
   ],
   declarations: [
     AppComponent,
-    CrisisListComponent,
     PageNotFoundComponent
   ],
   bootstrap: [ AppComponent ]
