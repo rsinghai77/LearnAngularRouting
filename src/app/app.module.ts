@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeroesModule } from './heroes/heroes.module';
 import { CrisesModule } from './crisis-center/crises.module';
 import { InventoryModule } from './inventory/inventory.module';
+import { InventoryExtnModule } from './extn/inventory/inventory-extn.module';
 
 import { PageNotFoundComponent } from './not-found.component';
 
@@ -18,6 +19,7 @@ import { PageNotFoundComponent } from './not-found.component';
     FormsModule,
     HeroesModule,
     CrisesModule,
+    InventoryExtnModule,
     InventoryModule,
     AppRoutingModule
   ],

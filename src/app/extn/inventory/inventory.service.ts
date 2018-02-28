@@ -20,9 +20,13 @@ export class Server {
 }
 
 const DEVICES = [
-  new Device(101, 'Device-1'),
-  new Device(102, 'Device-2'),
-  new Device(103, 'Device-3')
+  new Device(101, 'BNG'),
+  new Device(102, 'OLT-1'),
+  new Device(103, 'OLT-2'),
+  new Device(104, 'Channel-Partition'),
+  new Device(105, 'ONU-1'),
+  new Device(106, 'ONU-2'),
+  new Device(107, 'ONU-3')
 ];
 
 const INTERFACES = [
