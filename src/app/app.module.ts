@@ -5,8 +5,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HeroesModule }     from './heroes/heroes.module';
-import { CrisesModule }     from './crisis-center/crises.module';
+import { HeroesModule } from './heroes/heroes.module';
+import { CrisesModule } from './crisis-center/crises.module';
+import { InventoryModule } from './inventory/inventory.module';
 
 import { PageNotFoundComponent } from './not-found.component';
 
@@ -16,6 +17,8 @@ import { PageNotFoundComponent } from './not-found.component';
     BrowserAnimationsModule,
     FormsModule,
     HeroesModule,
+    CrisesModule,
+    InventoryModule,
     AppRoutingModule
   ],
   declarations: [

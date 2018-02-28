@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
   template: `
     <h1>Learn Angular Routing</h1>
     <nav>
-      <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+      <a routerLink="/crises" routerLinkActive="active">Crisis Center</a>
       <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
-      <a routerLink="/dynamic" routerLinkActive="active">Dynamic Stuff</a>
+      <a routerLink="/inventory/network" routerLinkActive="active">Inventory</a>
     </nav>
     <router-outlet></router-outlet>
   `

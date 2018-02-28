@@ -1,0 +1,8 @@
+<div class="inventory.server">
+  <h2>Service Inventory</h2>
+  <ul class="items">
+    <li *ngFor="let service of services$ | async">
+      <span class="badge">{{ service.id }}</span>{{ service.name }}
+    </li>
+  </ul>
+</div>
